@@ -52,4 +52,9 @@ function send_Form() {
     } else {
         checkMessage.innerHTML = ""
     }
+    if (checkName.innerHTML == "" && checkEmail.innerHTML == "" && checkTitle.innerHTML == "" && checkTitle.innerHTML == "" && checkMessage.innerHTML == "") {
+        alert("Submitted Successfully")
+
+        location.href = "index.html"
+    }
 }

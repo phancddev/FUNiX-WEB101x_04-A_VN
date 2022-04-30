@@ -14,7 +14,7 @@ function send_Form() {
     let checkMessage = document.getElementById('div_error_message')
 
 
-
+    //Check name
     if (!nameValue.length) {
         checkName.innerHTML = "Please fill out your name."
     } else
@@ -23,7 +23,7 @@ function send_Form() {
         checkName.innerHTML = "Your name should not exceed 100 characters."
     } else checkName.innerHTML = ""
 
-
+    //Check Email
     if (!emailValue.length) {
         checkEmail.innerHTML = "Please enter a email valid"
     } else
@@ -51,5 +51,9 @@ function send_Form() {
         checkMessage.innerHTML = "Your message should not exceed 500 characters."
     } else {
         checkMessage.innerHTML = ""
+    }
+    if (checkName.innerHTML == "" && checkEmail.innerHTML == "" && checkTitle.innerHTML == "" && checkTitle.innerHTML == "" && checkMessage.innerHTML == "") {
+        alert("Submitted Successfully")
+        location.href = "index.html"
     }
 }

@@ -52,4 +52,9 @@ function send_Form() {
     if (messageValue.length > 500) {
         checkToValue.innerHTML = "Address should not exceed 500 characters."
     } else checkToValue.innerHTML = ""
+    if (checkCakeTypeValue.innerHTML == "" && checkNameValue.innerHTML == "" && checkMessageValue.innerHTML == "" && checkCallValue.innerHTML == "" && checkTimeValue.innerHTML == "" && checkToValue.innerHTML == "") {
+        alert("Submitted Successfully")
+
+        location.href = "index.html"
+    }
 }
