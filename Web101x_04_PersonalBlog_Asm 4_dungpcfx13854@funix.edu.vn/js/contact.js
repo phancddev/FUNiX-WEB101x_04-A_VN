@@ -53,7 +53,11 @@ function send_Form() {
         checkMessage.innerHTML = ""
     }
     if (checkName.innerHTML == "" && checkEmail.innerHTML == "" && checkTitle.innerHTML == "" && checkTitle.innerHTML == "" && checkMessage.innerHTML == "") {
-        alert("Submitted Successfully")
-        location.href = "index.html"
+        setTimeout(function() {
+            alert("Submitted Successfully")
+
+            location.href = "index.html"
+        }, 3000);
     }
+
 }

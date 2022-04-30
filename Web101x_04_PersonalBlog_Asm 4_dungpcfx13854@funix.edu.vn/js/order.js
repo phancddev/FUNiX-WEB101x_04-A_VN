@@ -27,10 +27,11 @@ function send_Form() {
 
     if (!nameValue) {
         checkNameValue.innerHTML = "Please fill out your name."
+
     } else
     if (nameValue.length > 100) {
         checkNameValue.innerHTML = "Your name should not exceed 100 characters."
-    } else checkCakeTypeValue.innerHTML = ""
+    } else checkNameValue.innerHTML = ""
     if (!messageValue) {
         checkMessageValue.innerHTML = "Please fill out your message."
     } else
@@ -54,9 +55,10 @@ function send_Form() {
     } else checkToValue.innerHTML = ""
 
     if (checkCakeTypeValue.innerHTML == "" && checkNameValue.innerHTML == "" && checkMessageValue.innerHTML == "" && checkCallValue.innerHTML == "" && checkTimeValue.innerHTML == "" && checkToValue.innerHTML == "") {
-        alert("Submitted Successfully")
+        setTimeout(function() {
+            alert("Submitted Successfully")
 
-        location.href = "index.html"
+            location.href = "index.html"
+        }, 3000);
     }
-
 }
