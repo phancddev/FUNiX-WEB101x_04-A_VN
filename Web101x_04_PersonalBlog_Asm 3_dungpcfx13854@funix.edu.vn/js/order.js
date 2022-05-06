@@ -45,6 +45,7 @@ function send_Form() {
         checkTimeValue.innerHTML = "Please fill out the deliver date."
     } else
     if (Date.parse(timeValue) - Date.parse(new Date()) < 0) {
+        // Hàm trên có nghĩa là lấy giá trị ngày nhập vào trừ với giá trị ngày hiện tại, nếu nhỏ hơn 1 tức là ngày trong quá khứ
         checkTimeValue.innerHTML = "Date you choose in the past."
     } else checkTimeValue.innerHTML = ""
     if (!toValue) {
