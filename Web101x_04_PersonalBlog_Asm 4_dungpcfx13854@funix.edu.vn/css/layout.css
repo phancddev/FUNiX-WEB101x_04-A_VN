@@ -1,21 +1,27 @@
-/* For mobile phones: */
-
-[class*="col-"] {
-    width: 100%;
-}
-
-img {
-    width: 100%
-}
-
-@media only screen and (min-width: 600px) {
-    img {
-        width: auto
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    img {
-        width: auto
-    }
-}
+            /* For mobile phones: */
+            
+            [class*="col-"] {
+                width: 100%;
+            }
+            
+            img {
+                width: 100%
+            }
+            
+            @media only screen and (min-width: 600px) {
+                img {
+                    width: auto
+                }
+            }
+            
+            @media only screen and (min-width: 768px) {
+                img {
+                    width: auto
+                }
+            }
+            
+            @media screen and (min-width: 992px) {
+                #chi_brand {
+                    display: none;
+                }
+            }
