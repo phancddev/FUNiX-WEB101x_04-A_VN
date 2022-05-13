@@ -1,16 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 input[type=text],
 input[type=date],
-select,
+h1 {
+    font-size: 25px;
+}
+
+form label {
+    display: inline-block;
+    width: 10%;
+}
+
+form input {
+    display: inline-block;
+    width: 80%;
+}
+
+input[type="text"],
+input[type="date"],
 textarea {
-    width: 100%;
+    width: 80%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
     margin-top: 6px;
     margin-bottom: 16px;
-    resize: vertical
+    resize: vertical;
+}
+
+select {
+    width: 80%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    display: inline-block;
+}
+
+select {
+    width: 80%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    display: inline-block;
+}
+
+.flex_row {
+    display: flex;
+}
+
+.flex_row div {
+    width: 100%;
 }
 
 button {
@@ -35,6 +82,13 @@ button:hover {
 label {
     font-size: large;
     color: #04AA6D
+}
+
+#myform label {
+    display: inline-block;
+    width: 150px;
+    font-size: large;
+    color: #04aa6d;
 }
 
 *,

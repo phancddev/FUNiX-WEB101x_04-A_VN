@@ -44,61 +44,77 @@
     </header>
 
     <main class="container">
-        <div>
-            <label for="caketype">Cake name: </label>
-            <div>
-                <select id="caketype">
-                    <option value="default">--- Select cake ---</option>
-                    <option value="classic">Classic Yellow Cake</option>
-                    <option value="coconut">Coconut Bundt Cake</option>
-                    <option value="cream">Cream Cheese Pound Cake</option>
-                    <option value="germam">German Chocolate Cake</option>
-                </select>
-                <div id="div_error_caketype" class="check"></div>
+        <div id="myform">
+            <div class="flex_row">
+                <label for="caketype">Cake name: </label>
+                <div>
+                    <select id="caketype">
+              <option value="default">--- Select cake ---</option>
+              <option value="classic">Classic Yellow Cake</option>
+              <option value="coconut">Coconut Bundt Cake</option>
+              <option value="cream">Cream Cheese Pound Cake</option>
+              <option value="germam">German Chocolate Cake</option>
+            </select>
+                    <div id="div_error_caketype" class="check"></div>
+                </div>
             </div>
 
-            <div>
+            <div class="flex_row">
                 <label for="name">Your name</label>
-                <input type="text" id="name" placeholder="Your name..">
-                <div id="div_error_name" class="check"></div>
+                <div>
+                    <input type="text" id="name" placeholder="Your name.." />
+                    <div id="div_error_name" class="check"></div>
+                </div>
             </div>
 
-            <div>
+            <div class="flex_row">
                 <label for="message">Your message</label>
-                <input type="text" id="message" placeholder="The message write to cake..">
-                <div id="div_error_message" class="check"></div>
+                <div>
+                    <input type="text" id="message" placeholder="The message write to cake.." />
+                    <div id="div_error_message" class="check"></div>
+                </div>
             </div>
 
-            <div>
-                <label for="">Include</label> <br>
-                <input type="checkbox" id="candle"> Candle <br>
-                <input type="checkbox" id="firework"> Firework <br>
-                <input type="checkbox" id="toy"> Toys <br>
+            <div class="flex_row">
+                <label for="">Include</label>
+                <div>
+                    <div><input type="checkbox" id="candle" /> Candle</div>
+                    <div><input type="checkbox" id="firework" /> Firework</div>
+                    <div><input type="checkbox" id="toy" /> Toys</div>
+                </div>
             </div>
 
-
-            <div>
-                <label for="time">Deliver time:</label> <br>
-                <input type="date" id="time" name="time"> <br>
-                <div id="div_error_time" class="check"></div>
+            <div class="flex_row">
+                <label for="time">Deliver time:</label>
+                <div>
+                    <input type="date" id="time" name="time" />
+                    <div id="div_error_time" class="check"></div>
+                </div>
             </div>
 
-            <div>
-                <label>Call before deliver:</label> <br>
-                <input type="radio" id="call" name="checkCall"> Yes
-                <input type="radio" id="notcall" name="checkCall"> No
-                <div id="div_error_call" class="check"></div>
+            <div class="call_before_deliver flex_row">
+                <label>Call before deliver:</label>
+
+                <div>
+                    <div><input type="radio" id="call" name="checkCall" /> Yes</div>
+                    <div><input type="radio" id="notcall" name="checkCall" /> No</div>
+                    <div id="div_error_call" class="check"></div>
+                </div>
             </div>
 
-            <div>
+            <div class="deliver flex_row">
                 <label for="to">Deliver to</label>
-                <textarea id="to" name="to" placeholder="Deliver to.." style="height:200px"></textarea>
-                <div id="div_error_to" class="check"></div>
+                <div>
+                    <textarea id="to" name="to" placeholder="Deliver to.." style="height: 200px"></textarea>
+                    <div id="div_error_to" class="check"></div>
+                </div>
             </div>
 
-
-            <button onClick="send_Form()">Order now</button>
+            <div class="flex_row btnSubmit">
+                <button class="butt" onClick=" send_Form() ">Order now</button>
+            </div>
         </div>
+
     </main>
     <footer>
         <p>© 2023 by Chi's cake</p>
